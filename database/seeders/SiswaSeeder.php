@@ -19,7 +19,7 @@ class SiswaSeeder extends Seeder
         for($i = 0; $i < 5; $i++){
             Siswa::create([
                 'nama' => $faker->name,
-                'kelas' => $faker->randomElement(['X - RPL', 'XI - RPL', 'XII - PPLG'])
+                'kelas' => $faker->randomElement(['X-RPL', 'XI-RPL', 'XII-PPLG'])
             ]);
         }
     }

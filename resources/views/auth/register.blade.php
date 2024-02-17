@@ -71,7 +71,7 @@
 
     <main class="form-signin w-100 m-auto ">
     @include('komponen.alert')
-    <img class="mb-4" src="{{ asset('img/ohto-ai-1.png') }}" alt="Ohto Ai" title="Ohto Ai" width="200" height="200">
+    <img class="mb-4" src="{{ asset('img/ohto-register.png') }}" alt="Ohto Ai" title="Ohto Ai" width="200" height="200">
     <h1 class="h3 mb-3 fw-normal">Register dulu!</h1>
     <form method="POST" action="/auth/register">
         @csrf
@@ -84,11 +84,6 @@
       <label for="password">Password</label>
     </div>
 
-    {{-- <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
-    </div> --}}
     <button class="w-100 btn btn-lg btn-primary mb-3" type="submit">Register</button>
 </form>
 <a href="/auth/login">Sudah punya akun? Login</a>

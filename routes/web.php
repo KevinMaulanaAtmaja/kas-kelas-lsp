@@ -44,5 +44,5 @@ Route::middleware('checkLogin')->group(function(){
 // AuthController
 Route::get('/auth/register', [AuthController::class, 'registerLayout'])->name('register');
 Route::post('/auth/register', [AuthController::class, 'register']);
-Route::get('/auth/login', [AuthController::class, 'loginLayout'])->name('login');
-Route::post('/auth/login', [AuthController::class, 'login']);
+Route::get('/auth/login', [AuthController::class, 'loginLayout'])->name('login')->middleware('checkTamu');
+Route::post('/auth/login', [AuthController::class, 'login'])->middleware('checkTamu');

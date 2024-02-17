@@ -18,7 +18,7 @@
 
     <main class="form-signin w-100 m-auto ">
     @include('komponen.alert')
-    <img class="mb-4" src="{{ asset('img/ohto3.png') }}" alt="Ohto Ai" title="Ohto Ai" width="200" height="200">
+    <img class="mb-4" src="{{ asset('img/ohto-login.png') }}" alt="Ohto Ai" title="Ohto Ai" width="200" height="200">
     <h1 class="h3 mb-3 fw-normal">Login dulu coy!</h1>
     <form method="POST" action="/auth/login">
         @csrf
@@ -31,11 +31,6 @@
       <label for="password">Password</label>
     </div>
 
-    {{-- <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
-    </div> --}}
     <button class="w-100 btn btn-lg btn-primary mb-3" type="submit">Login</button>
 </form>
     <a href="/auth/register">Belum punya akun? Register</a>
