@@ -71,43 +71,8 @@ class PembayaranController extends Controller
             abort(404);
         }
 
-        // Akses relasi siswa melalui model Pembayaran
-        // $siswa = $pembayaran->siswa;
-
-        // // Akses properti siswa
-        // $namaSiswa = $siswa->nama;
-
-        // dd($namaSiswa);
-
         return view('pembayaran.detail', compact('pembayaran'));
     }
-
-
-
-
-
-
-    // public function show($id)
-    // {
-    //     $pembayaran = Pembayaran::with('siswa')->where('id', $id)->first();
-
-    //     if (!$pembayaran) {
-    //         abort(404);
-    //     }
-
-    //     // Akses relasi siswa melalui model Pembayaran
-    //     $siswa = $pembayaran->siswa;
-
-    //     // Akses properti siswa
-    //     $namaSiswa = $siswa->nama;
-
-    //     // dd($namaSiswa);
-
-    //     return view('pembayaran.detail', compact('pembayaran', 'namaSiswa'));
-    // }
-
-
-
 
 
     /**
@@ -118,12 +83,7 @@ class PembayaranController extends Controller
      */
     public function edit($id)
     {
-        $pembayaran = Pembayaran::find($id);
-        $namaSiswa = Siswa::all();
-        $siswa = Siswa::find($id);
-        // dd($namaSiswa);
-
-        return view('pembayaran.edit', compact('pembayaran', 'namaSiswa', 'siswa'));
+        //
     }
 
     /**
@@ -135,21 +95,7 @@ class PembayaranController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $request->validate([
-            'id_siswa' => 'required',
-            'tgl_bayar' => 'required',
-            'jumlah_bayar' => 'required|numeric'
-        ]);
-        $pembayaran = Pembayaran::findOrFail($id);
-
-        $pembayaran->update([
-            'id_siswa' => $request->id_siswa,
-            'tgl_bayar' => $request->tgl_bayar,
-            'jumlah_bayar' => $request->jumlah_bayar
-        ]);
-
-
-        return redirect('/pembayaran')->with('success', 'Berhasil update data Pembayaran!');
+        //
     }
 
     /**

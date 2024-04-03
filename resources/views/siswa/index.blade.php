@@ -1,5 +1,3 @@
-<!-- resources/views/siswa/index.blade.php -->
-
 @extends('layout.main')
 @section('konten')
     <h1 class="text-primary">Semua Siswa</h1>
@@ -22,7 +20,8 @@
                         <form action="">
                             <a href="{{ 'siswa/'. $s->id .'/edit' }}" class="btn btn-warning btn-sm">Edit</a>
                             <a onclick="return confirm('apa yakin?')" href="{{ 'siswa/'. $s->id .'/delete' }}" class="btn btn-danger btn-sm">Hapus
-                            </a></form>
+                            </a>
+                        </form>
                     </td>
                 </tr>
             @endforeach

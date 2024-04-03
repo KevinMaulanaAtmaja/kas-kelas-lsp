@@ -28,27 +28,11 @@
                 <option value="15000">15 RB</option>
             </select>
         </div>
-        {{-- <div class="my-3 mx-5">
-            <label for="isi_sendiri" class="form-label d-block " id="label">Isi Sendiri</label>
-            <input type="number" name="jumlah_bayar"  id="isi_sendiri" class="form-control d-none">
-        </div> --}}
         <div class="mb-3 mx-5">
             <button class="btn btn-success">Tambah Data</button>
+            <a href="/pembayaran" class="btn btn-primary"><< Kembali</a>
         </div>
     </form>
 </div>
 </div>
 @endsection
-
-    {{-- <script>
-        document.addEventListener('DOMContentLoaded', function () {
-        const label = document.getElementById('label');
-        const input = document.querySelector('#isi_sendiri');
-
-        label.addEventListener('click', function () {
-            input.classList.remove('d-none');
-        });
-    });
-
-
-    </script> --}}

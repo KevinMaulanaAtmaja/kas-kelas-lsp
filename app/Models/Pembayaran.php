@@ -17,5 +17,4 @@ class Pembayaran extends Model
     {
         return $this->belongsTo(Siswa::class, 'id_siswa');
     }
-
 }

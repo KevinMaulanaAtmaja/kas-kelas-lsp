@@ -18,8 +18,8 @@ class UserSeeder extends Seeder
     {
         // $faker = \Faker\Factory::create('id_ID');
         User::create([
-            'email' => 'kevin@gmail.com',
-            'password' => Hash::make(123),
+            'email' => 'admin@gmail.com',
+            'password' => Hash::make('admin123'),
         ]);
     }
 }

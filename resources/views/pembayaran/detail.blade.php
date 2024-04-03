@@ -17,15 +17,6 @@
                 <td>{{ $p->tgl_bayar }}</td>
             </tr>
         @endforeach
-
-
-        {{-- @foreach ($pembayaran as $p => $key)
-            <tr>
-                <td>{{ $p->siswa->nama }}</td>
-                <td>Rp{{ number_format($pembayaran->jumlah_bayar, 0, ',', '.') }}</td>
-                <td>{{ $pembayaran->tgl_bayar }}</td>
-            </tr>
-        @endforeach --}}
     </tbody>
 </table>
 @endsection

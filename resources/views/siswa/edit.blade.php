@@ -17,7 +17,8 @@
             </select>
         </div>
         <div class="mb-3 mx-5 me-0">
-            <button class="btn btn-success ">Update Data</button>
+            <button class="btn btn-success">Update Data</button>
+            <a href="/siswa" class="btn btn-primary"><< Kembali</a>
         </div>
     </form>
 </div>

@@ -19,10 +19,9 @@
             </div>
             <div class="mb-3 mx-5 me-0">
                 <button class="btn btn-success ">Tambah Data</button>
+                <a href="/siswa" class="btn btn-primary"><< Kembali</a>
             </div>
         </form>
     </div>
     </div>
-
-
 @endsection
